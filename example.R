@@ -6,7 +6,7 @@ library(xtable)
 #################################
 #'@examples
 set.seed(1111)
-n=50; T=100; d0=20; d=20; k=5
+n=100; T=100; d0=10; d=10; k=5
 k<2*d0+4*d
 
 W=W.n(n)
@@ -18,8 +18,8 @@ xn<-NULL
 for(t in 2:T)
   xn<-cbind(xn,x[((t-1)*n+1):(t*n),],x[((t-2)*n+1):((t-1)*n),])
 
-rho=0.2
-del0=0.3
+rho=0.3
+del0=0.2
 del1=0.5
 alp=0.5
 

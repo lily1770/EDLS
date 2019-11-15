@@ -1,3 +1,4 @@
+source(function.R)
 library(Ohit)
 library(Matrix)
 library(plus)
